@@ -1,14 +1,13 @@
-// The forecast today
+// The temperature in Kelvin
 const kelvin = 293;
 
-// The forecast in celsius
-const celcius = kelvin - 273;
+//The temperature in Celcius
+var celcius = (kelvin -  273);
 
-// The forecast in farenheit
-let farenheit = celcius * (9/5) + 32;
+//The temperature in Farenheit rounded down
+var farenheit = (Math.floor(celcius * (9/5) + 32));
 
-// Farenheit rounded down
-farenheit = Math.floor(farenheit);
+//The temperature in Newton
+var newton = (celcius * (33/100));
 
-// Temperature in farenheit
-console.log('The temperature is ${farenheit} degrees Farenheit.');
+console.log(`The temperature is ${farenheit} degrees farenheit.`);
